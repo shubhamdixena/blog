@@ -1,0 +1,76 @@
+
+/* React Quill Custom Styles */
+.ql-toolbar {
+  border-top: 1px solid hsl(var(--border)) !important;
+  border-left: 1px solid hsl(var(--border)) !important;
+  border-right: 1px solid hsl(var(--border)) !important;
+  border-bottom: none !important;
+  background: hsl(var(--background));
+}
+
+.ql-container {
+  border-bottom: 1px solid hsl(var(--border)) !important;
+  border-left: 1px solid hsl(var(--border)) !important;
+  border-right: 1px solid hsl(var(--border)) !important;
+  border-top: none !important;
+  background: hsl(var(--background));
+}
+
+.ql-editor {
+  color: hsl(var(--foreground));
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.ql-editor::before {
+  color: hsl(var(--muted-foreground));
+  font-style: italic;
+}
+
+.ql-snow .ql-picker {
+  color: hsl(var(--foreground));
+}
+
+.ql-snow .ql-stroke {
+  stroke: hsl(var(--foreground));
+}
+
+.ql-snow .ql-fill {
+  fill: hsl(var(--foreground));
+}
+
+.ql-snow .ql-picker-options {
+  background: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+}
+
+.ql-snow .ql-picker-item:hover {
+  background: hsl(var(--accent));
+}
+
+.ql-syntax {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+  padding: 12px;
+  margin: 8px 0;
+  font-family: 'Courier New', monospace;
+  color: hsl(var(--foreground));
+}
+
+/* Code block highlighting */
+.ql-editor pre.ql-syntax {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+/* Blockquote styling */
+.ql-editor blockquote {
+  border-left: 4px solid hsl(var(--primary));
+  margin: 16px 0;
+  padding-left: 16px;
+  color: hsl(var(--muted-foreground));
+  font-style: italic;
+}
